@@ -15,6 +15,7 @@ const options = {
     if (userSelectedDate > Date.now()) {
       startBtn.removeAttribute('disabled');
     } else {
+      startBtn.setAttribute('disabled', '');
       iziToast.show({
         title: 'Oh NO!',
         message: 'Please choose a date in the future',
